@@ -28,6 +28,8 @@ def ghoul_spam_handler(client, message):
         client.send_message(message.chat.id, end_message)
 
 
+@client.on_message(filters.regex('no|nO|No|NO') & filters.me)
+exit
 @client.on_message(filters.command(ghoul_table_command, prefixes=command_prefixes) & filters.me)
 def ghoul_table_handler(client, message):
     i = 1000
