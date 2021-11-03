@@ -29,7 +29,7 @@ def ghoul_spam_handler(client, message):
 
 
 @client.on_message(filters.regex('no|nO|No|NO') & filters.me)
-def otsos(penis, hui):
+def otsos(client, message):
     lkl = 3
     while lkl > 1:
         try:
