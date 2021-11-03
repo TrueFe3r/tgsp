@@ -17,11 +17,11 @@ def ghoul_spam_handler(client, message):
     i = 1000
     while i > 0:
         try:
-            client.send_message(message.chat.id, f'SPAM BY FE3R')
+            client.send_message(message.chat.id, f'Only {i-1}for end! (FE3R)')
         except FloodWait as e:
             sleep(e.x)
 
-        i -= 7
+        i -= 1
         sleep(1/messages_per_second)        
 
     if(end_message != ''):
