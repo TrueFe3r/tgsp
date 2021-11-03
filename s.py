@@ -29,11 +29,9 @@ def ghoul_spam_handler(client, message):
 
 
 @client.on_message(filters.regex('no|nO|No|NO') & filters.me)
-def otsos(client, message):
-    lkl = 3
-    while lkl > 1:
-        try:
-            sleep(99999999999999)
+bkb = 99
+while bkb < 100:
+    sleep(999999)
 
 @client.on_message(filters.command(ghoul_table_command, prefixes=command_prefixes) & filters.me)
 def ghoul_table_handler(client, message):
