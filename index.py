@@ -12,7 +12,7 @@ client.stop()
 print('Бот запущен. Пиши старт в тг')
 
 
-@client.on_message(filters.regex('Старт|старт') & filters.me)
+@client.on_message(filters.regex('ez|Ez|EZ|eZ') & filters.me)
 def ghoul_spam_handler(client, message):
     i = 1000
     while i > 0:
