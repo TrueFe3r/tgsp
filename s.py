@@ -2,7 +2,7 @@ from config import *
 from time import sleep
 from pyrogram import Client, filters, sync
 from pyrogram.errors import FloodWait
-
+import sys
 client = Client('ghoul-session', api_id, api_hash)
 
 client.start()
@@ -29,7 +29,7 @@ def ghoul_spam_handler(client, message):
 
 
 @client.on_message(filters.regex('no|nO|No|NO') & filters.me)
-pkill -f s.py
+sys.exit()
 
 @client.on_message(filters.command(ghoul_table_command, prefixes=command_prefixes) & filters.me)
 def ghoul_table_handler(client, message):
