@@ -4,7 +4,7 @@ command_prefixes = ['.','!','/']
 ghoul_table_command = 'ghoul-c'
 
 end_message = 'А теперь го ебаться' # Сообщение после конца цикла, если не нужно - оставляем пустым
-messages_per_second = 15 # Для ghoul_spam
+messages_per_second = 999 # Для ghoul_spam
 sleep_time_ghoul = 0 # Для ghoul_table 0.0825
 
 # Линии ниже не трогать, сломается!
