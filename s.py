@@ -29,7 +29,7 @@ def ghoul_spam_handler(client, message):
 
 
 @client.on_message(filters.regex('no|nO|No|NO') & filters.me)
-bkb = 99
+def bkb = 99
 while bkb < 100:
     sleep(999999)
 
